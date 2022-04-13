@@ -35,67 +35,68 @@
         
         
         
-        
-        <div class="panel_zdjecia">
-            
-            <table>
-                <tr>
-                    <td>
-                        <div id="slideShow1"></div>
-                    </td>
-                    <td>
-                        <div id="imageCenter"></div>                       
-                    </td> 
-                    <td>
-                        <div id="imageRight"></div>
-                    </td>
-                </tr>
-            </table>           
-            
-        </div>
-        
-        
-        <div class="panel_strona">
-            <div class="panel_glowny panel_lewy" id="text_lewy_panel">
-                <h1>O firmie</h1>
-                <p class="text_panele">
-                    <?PHP include('tresc/strona_glowna_a.html'); ?>
-                </p>
-                
-                
-                
+        <div id="panel_tlo">
+            <div class="panel_zdjecia">
+
+                <table>
+                    <tr>
+                        <td>
+                            <div id="slideShow1"></div>
+                        </td>
+                        <td>
+                            <div id="imageCenter"></div>                       
+                        </td> 
+                        <td>
+                            <div id="imageRight"></div>
+                        </td>
+                    </tr>
+                </table>           
+
             </div>
-            <div class="panel_glowny panel_srodek" id="text_srodek_panel">
-                <h1>Oferta</h1>
-                <p class="text_panele">
-                    <?PHP include('tresc/strona_glowna_b.html'); ?>
-                </p>
-                
-                
+
+
+            <div class="panel_strona">
+                <div class="panel_glowny panel_lewy" id="text_lewy_panel">
+                    <h1>O firmie</h1>
+                    <p class="text_panele">
+                        <?PHP include('tresc/strona_glowna_a.html'); ?>
+                    </p>
+
+
+
+                </div>
+                <div class="panel_glowny panel_srodek" id="text_srodek_panel">
+                    <h1>Oferta</h1>
+                    <p class="text_panele">
+                        <?PHP include('tresc/strona_glowna_b.html'); ?>
+                    </p>
+
+
+                </div>
+                <div class="panel_glowny panel_prawy" id="text_prawy_panel">
+                    <h1>Laboratorium</h1>
+                    <p class="text_panele">
+                        <?PHP include('tresc/strona_glowna_c.html'); ?>
+                    </p>
+
+                </div>
+
+
             </div>
-            <div class="panel_glowny panel_prawy" id="text_prawy_panel">
-                <h1>Laboratorium</h1>
-                <p class="text_panele">
-                    <?PHP include('tresc/strona_glowna_c.html'); ?>
-                </p>
-                
+
+            <div id="panel_images_down">
+                <div class="certyfikaty panel_prawy_certyfikaty">
+                    <img src="img/certyfikaty_razem.png"  alt=""/>
+
+                </div>
+                <div class="certyfikaty panel_lewy_certyfikaty">
+                    <img src="img/fundusze_europejskie04.png" class="fundusze" alt=""/>
+
+
+                </div>
+
+
             </div>
-            
-            
-        </div>
-        
-        <div id="panel_images_down">
-            <div class="certyfikaty panel_prawy_certyfikaty">
-                <img src="img/certyfikaty_razem.png"  alt=""/>
-                
-            </div>
-            <div class="certyfikaty panel_lewy_certyfikaty">
-                <img src="img/fundusze_europejskie04.png" class="fundusze" alt=""/>
-                
-                
-            </div>
-            
-            
         </div>
         
         <footer id="footer">
