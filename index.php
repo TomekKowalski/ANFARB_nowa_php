@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/style_pokaz_slajdow.css"/>
         
         <script src="js/script_pokaz_slajdow.js" async></script> 
+        <script src="js/script_anfarb.js" async></script> 
         <title>AN-FARB - Usługi barwienia</title>
     </head>
     <body> 
