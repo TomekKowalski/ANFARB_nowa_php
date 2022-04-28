@@ -50,14 +50,21 @@ div.panel
 }
 */
 table, td, th {
-  /*border: 1px solid black;  */
-  width: 33.8%;
+  /*border: 2px solid black;  */
+  /*width: 33.8%;*/
   /*text-align: center;*/
 }
+td.oferta
+{
+    width: 50%;
+}
+
 
 table {
   width: 100%;
   border-collapse: collapse;
+  
+  
 }
 .tdColor
 {
@@ -151,10 +158,49 @@ table {
     margin: 9px;
     border: 2px solid red;
     border-radius: 10px;
-    box-shadow: 5px 5px 2px #777777;
+    box-shadow: 5px 5px 2px #777777;   
+}
+.panel_glowny_o_firmie
+{
+    width: 91%;
+    /*height: 400px;*/
+    background-color: #4062EB;
+    padding-top: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+    /*padding: 3%;*/
+    /*margin-top: 100px;*/
+    margin: 80px 9px 9px 9px;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #777777; 
     
-    
-    
+}
+#text_lewy_o_firmie
+{
+    width: 90%;
+    float: left;
+       
+}
+#text_prawy_o_firmie
+{
+    width: 90%;
+    float: right;   
+}
+#text_lewy_oferta
+{
+    width: 90%;
+    float: left;
+}
+#text_prawy_oferta
+{
+    width: 90%;
+    float: right; 
+}
+.wyrownaj
+{
+    vertical-align: top;
+    width: 50%;
 }
 .panel_lewy
 {
@@ -163,6 +209,11 @@ table {
 .panel_srodek
 {
     float: left;
+    
+}
+.panel_srodek_ukryj
+{
+    display: none;
 }
 .panel_prawy
 {
@@ -202,6 +253,94 @@ table {
     top: 1px;
     z-index: 1;
 }
+.panel_strona_o_firmie
+{
+    width: 950px;
+    margin: 10px auto 10px auto;
+    height: 700px;
+    /*background-color: black;*/
+    /*border: 1px solid black;*/
+    display: block;
+    position: relative;
+    top: 1px;
+    z-index: 1;
+}
+.przesuniecie_od_gory
+{
+    padding-top: 2px;
+}
+img.small_fundusze
+{
+    width: 100%;
+    height: 20%;
+}
+img.zdjecie_dynamica
+{
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+}
+img.zdjecie_certyfikaty
+{
+    width: 167px;
+    height: 135px;
+    float: left;
+}
+img.pdf_dotacje
+{
+    float: left;
+}
+
+div.panel_certyfikaty
+{
+    background-color: white;
+    width: 98%;
+    height: 135px;
+    border-radius: 10px;
+    padding: 1%;
+}
+div.panel_dotacje
+{
+    /*background-color: white;*/
+    width: 98%;
+    
+    border-radius: 10px;
+    padding-left:  2%;
+    padding-top: 1px;
+    /*background: linear-gradient(45deg, red, blue);*/
+    background: linear-gradient(45deg, white, #00BFFF);
+}
+
+div.panel_dotacje:hover
+{
+    background: linear-gradient(45deg, #00BFFF, white);
+}
+.text_certyfikaty
+{
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 0.75em;
+    padding-right: 2%;
+}
+.text_dotacje
+{
+    font-family: Verdana;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+.text_dotacje2
+{
+    /*font-family: Verdana;*/
+    font-family: tahoma;
+    font-size: 0.85em;
+}
+.link_podkresl
+{
+    text-decoration: underline;
+}
+
+
+
 #panel_images_down
 {
     width: 950px;
@@ -214,6 +353,42 @@ table {
     top: 1px;
     z-index: 1;
     
+}
+#panel_images_down_o_firmie
+{
+    width: 950px;
+    margin: 10px auto 10px auto;
+    height: 500px;
+    /*background-color: black;*/
+    /*border: 1px solid black;*/
+    display: block;
+    position: relative;
+    top: 1px;
+    z-index: 1;   
+}
+#panel_images_down_oferta
+{
+    width: 950px;
+    margin: 740px auto 10px auto;
+    height: 250px;
+    /*background-color: black;*/
+    /*border: 1px solid black;*/
+    display: block;
+    position: relative;
+    top: 1px;
+    z-index: 1;   
+}
+#panel_images_down_laboratorium
+{
+    width: 950px;
+    margin: 160px auto 10px auto;
+    height: 200px;
+    /*background-color: black;*/
+    /*border: 1px solid black;*/
+    display: block;
+    position: relative;
+    top: 1px;
+    z-index: 1;  
 }
 #panel_tlo
 {
@@ -240,6 +415,36 @@ table {
     font-family: Verdana;
     font-size: 0.85em;
 }
+div.panel_pdf
+{
+    background-color: white;
+    padding: 3%;
+    font-family: Verdana;
+    font-size: 0.75em;
+}
+div.panel_pdf:hover
+{
+    background-color: #87CEFA;
+    color: white;
+    padding: 3%;
+    font-family: Verdana;
+    font-size: 0.75em;
+    text-decoration: underline;
+}
+.text_pogrubiony
+{
+    font-weight: bold;
+}
+
+#wiecej_lewy
+{
+    color: white;
+    text-align: right;
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
 h1
 {
     color: white;
@@ -247,6 +452,15 @@ h1
 ul
 {
     color: white;
+    
+    
+}
+ul.lista_certyfikaty
+{
+    color: black;
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 0.75em;
 }
 .certyfikaty
 {
@@ -373,6 +587,10 @@ nav
     
     
 }
+.kolor_text_menu
+{
+    color: red;
+}
 .menu_lista
 {
     
@@ -407,6 +625,11 @@ a
    text-decoration: none; 
    color: black;
 }
+.kolor_link
+{
+    color: white;
+}
+
 .text
 {
     font-family: serif;
