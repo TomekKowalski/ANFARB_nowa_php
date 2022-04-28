@@ -162,7 +162,7 @@ table {
 }
 .panel_glowny_o_firmie
 {
-    width: 91%;
+    width: 91.4%;
     /*height: 400px;*/
     background-color: #4062EB;
     padding-top: 0%;
@@ -256,8 +256,8 @@ table {
 .panel_strona_o_firmie
 {
     width: 950px;
-    margin: 10px auto 10px auto;
-    height: 700px;
+    margin: 10px auto 0px auto;
+    /*height: 700px;*/
     /*background-color: black;*/
     /*border: 1px solid black;*/
     display: block;
@@ -344,8 +344,8 @@ div.panel_dotacje:hover
 #panel_images_down
 {
     width: 950px;
-    margin: 10px auto 10px auto;
-    height: 300px;
+    margin: 0px auto 10px auto;
+    height: 200px;
     /*background-color: black;*/
     /*border: 1px solid black;*/
     display: block;
@@ -354,42 +354,7 @@ div.panel_dotacje:hover
     z-index: 1;
     
 }
-#panel_images_down_o_firmie
-{
-    width: 950px;
-    margin: 10px auto 10px auto;
-    height: 500px;
-    /*background-color: black;*/
-    /*border: 1px solid black;*/
-    display: block;
-    position: relative;
-    top: 1px;
-    z-index: 1;   
-}
-#panel_images_down_oferta
-{
-    width: 950px;
-    margin: 740px auto 10px auto;
-    height: 250px;
-    /*background-color: black;*/
-    /*border: 1px solid black;*/
-    display: block;
-    position: relative;
-    top: 1px;
-    z-index: 1;   
-}
-#panel_images_down_laboratorium
-{
-    width: 950px;
-    margin: 160px auto 10px auto;
-    height: 200px;
-    /*background-color: black;*/
-    /*border: 1px solid black;*/
-    display: block;
-    position: relative;
-    top: 1px;
-    z-index: 1;  
-}
+
 #panel_tlo
 {
     width: 950px;
@@ -398,9 +363,9 @@ div.panel_dotacje:hover
 }
 .panel_zdjecia
 {
-    width: 930px;
+    width: 940px;
     height: 280px;
-    margin: 10px auto 10px auto;
+    margin: 10px 1px 10px auto;
     /*background-color: red;*/
     display: block;
     position: relative;

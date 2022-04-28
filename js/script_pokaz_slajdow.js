@@ -9,7 +9,7 @@ window.onload = function()
     //imageRight.innerHTML = "test";
     //slideShowCenter.innerHTML += "<br>";
     
-    var imagesSrc = ["image_left_01.jpg", "bg-farbiarnia3.jpg", "image_left_04.jpg", "image_left_06.jpg"];
+    var imagesSrc = ["image_left_01.jpg", "bg-farbiarnia3.jpg", "image_left_04.jpg", "image_left_05.jpg", "image_left_06.jpg", "image_left_07.jpg", "image_left_08.jpg"];
     var imagesSrcCenter = ["image_center_01 (1).jpg", "image_center_01 (2).jpg", "image_center_01 (3).jpg", "image_center_01 (4).jpg"];
     var imagesSrcRight = ["image_right01.jpg", "image_right02.jpg", "image_right03.jpg", "image_right04.jpg"];
     

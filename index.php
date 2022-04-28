@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/style_pokaz_slajdow.css"/>
         
-        <script src="js/script_pokaz_slajdow.js" async></script> 
-        <script src="js/script_anfarb.js" async></script> 
+        <script src="js/script_pokaz_slajdow.js" async></script>          
         <title>AN-FARB - Usługi barwienia</title>
     </head>
     <body> 
@@ -17,15 +16,15 @@
             <div id="panel_in_header">
                 
                 <div id="logo">
-                    <img src="img/baner_an_farb_02.png"  alt=""/>
+                    <a href="index.php"><img src="img/baner_an_farb_02.png"  alt=""/></a>
                 </div>
                 <nav>                   
                     <div class="menu">
-                        <a href="index.php"><div class="menu_lista">O firmie</div></a>
-                        <a href=""><div class="menu_lista">Oferta</div></a>
-                        <a href=""><div class="menu_lista menu_lista_szerokosc">Laboratorium</div></a>
-                        <a href=""><div class="menu_lista">Certyfikaty</div></a>
-                        <a href=""><div class="menu_lista">Dotacje</div></a>
+                        <a href="o_firmie/o_firmie.php"><div class="menu_lista">O firmie</div></a>
+                        <a href="oferta/oferta.php"><div class="menu_lista">Oferta</div></a>
+                        <a href="laboratorium/laboratorium.php"><div class="menu_lista menu_lista_szerokosc">Laboratorium</div></a>
+                        <a href="certyfikaty/certyfikaty.php"><div class="menu_lista">Certyfikaty</div></a>
+                        <a href="dotacje/dotacje.php"><div class="menu_lista">Dotacje</div></a>
                         <a href=""><div class="menu_lista">Kontakt</div></a>
                     </div>
                 </nav>
@@ -62,6 +61,9 @@
                     <p class="text_panele">
                         <?PHP include('tresc/strona_glowna_a.html'); ?>
                     </p>
+                    
+                    <a href="o_firmie/o_firmie.php" class="kolor_link"><p id="wiecej_lewy">Więcej...</p></a>
+                    
 
 
 
@@ -71,6 +73,8 @@
                     <p class="text_panele">
                         <?PHP include('tresc/strona_glowna_b.html'); ?>
                     </p>
+                    <a href="oferta/oferta.php" class="kolor_link"><p id="wiecej_lewy">Więcej...</p></a>
+                    
 
 
                 </div>
@@ -79,6 +83,8 @@
                     <p class="text_panele">
                         <?PHP include('tresc/strona_glowna_c.html'); ?>
                     </p>
+                    <a href="laboratorium/laboratorium.php" class="kolor_link"><p id="wiecej_lewy">Więcej...</p></a>
+                    
 
                 </div>
 
