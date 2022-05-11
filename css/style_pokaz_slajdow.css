@@ -91,4 +91,24 @@
     
     
 }
+#slideShow1_mobile
+{
+    /*visibility: hidden;*/
+    height: 1px;
+    width: 1px;
+    
+
+}
+#panel_zdjecia_mobile
+{
+    /*visibility: hidden;*/
+    display: none;
+    
+}
+#panel_pod_menu_mobile
+{
+    visibility: hidden;
+  
+
+}
 

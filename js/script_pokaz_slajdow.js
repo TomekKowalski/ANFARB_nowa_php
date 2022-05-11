@@ -6,6 +6,10 @@ window.onload = function()
     var imageCenter = document.getElementById("imageCenter");
     var imageRight = document.getElementById("imageRight");
     
+    var slideShow_mobile = document.getElementById("slideShow1_mobile");
+    var imageCenter_mobile = document.getElementById("imageCenter_mobile");
+    var imageRight_mobile = document.getElementById("imageRight_mobile");
+    
     //imageRight.innerHTML = "test";
     //slideShowCenter.innerHTML += "<br>";
     
@@ -19,6 +23,15 @@ window.onload = function()
         var image = new Image();
         image.src = "images/image_left/" + imagesSrc[i];
         slideShow.appendChild(image);
+        //slideShow_mobile.appendChild(image);
+    }
+    
+    for(var i=0; i<imagesSrc.length; i++)
+    {
+        var image = new Image();
+        image.src = "images/image_left/" + imagesSrc[i];
+        slideShow_mobile.appendChild(image);
+        //slideShow_mobile.appendChild(image);
     }
      
     for(var i=0; i<imagesSrcCenter.length; i++)
@@ -27,20 +40,38 @@ window.onload = function()
         imagesrcCenter.src = "images/image_center/" + imagesSrcCenter[i];
         imageCenter.appendChild(imagesrcCenter);
     }
+    for(var i=0; i<imagesSrcCenter.length; i++)
+    {
+        var imagesrcCenter = new Image();
+        imagesrcCenter.src = "images/image_center/" + imagesSrcCenter[i];
+        imageCenter_mobile.appendChild(imagesrcCenter);
+    }
+    
     for(var i=0; i<imagesSrcRight.length; i++)
     {
         var imagesrcRight = new Image();
         imagesrcRight.src = "images/image_right/" + imagesSrcRight[i];
         imageRight.appendChild(imagesrcRight);
     }
+    for(var i=0; i<imagesSrcRight.length; i++)
+    {
+        var imagesrcRight = new Image();
+        imagesrcRight.src = "images/image_right/" + imagesSrcRight[i];
+        imageRight_mobile.appendChild(imagesrcRight);
+    }
     
     slideShow.childNodes[0].setAttribute("class", "current");
     imageCenter.childNodes[0].setAttribute("class", "currentCenter");
     imageRight.childNodes[0].setAttribute("class", "currentRight");
     
+    slideShow_mobile.childNodes[0].setAttribute("class", "current");
+    imageCenter_mobile.childNodes[0].setAttribute("class", "currentCenter");
+    imageRight_mobile.childNodes[0].setAttribute("class", "currentRight");
+    
     var i = 0;
     var i_left = 0;
     var i_center = 0;
+    var i_mobile = 0;
     var flaga_left = true;
     var flaga_center = false;
     var flaga_right = false;
@@ -104,7 +135,18 @@ window.onload = function()
             flaga_left = true;
             flaga_zmien = false;
         }
-    
+        
+        slideShow_mobile.childNodes[i_mobile%imagesSrc.length].setAttribute("class", "");   
+        slideShow_mobile.childNodes[(i_mobile+1)%imagesSrc.length].setAttribute("class", "current");
+        
+        imageCenter_mobile.childNodes[i_mobile%imagesSrcCenter.length].setAttribute("class", "");   
+        imageCenter_mobile.childNodes[(i_mobile+1)%imagesSrcCenter.length].setAttribute("class", "currentCenter");
+         
+        imageRight_mobile.childNodes[i_mobile % imagesSrcCenter.length].setAttribute("class", "");   
+        imageRight_mobile.childNodes[(i_mobile+1) % imagesSrcCenter.length].setAttribute("class", "currentRight");
+            
+        
+        i_mobile++;
         
         
         

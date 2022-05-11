@@ -145,6 +145,7 @@ table {
 {
     width: 90%;
 }
+/*
 .panel_glowny
 {
     width: 25%;
@@ -154,28 +155,82 @@ table {
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 0%;
-    /*padding: 3%;*/
     margin: 9px;
     border: 2px solid red;
     border-radius: 10px;
     box-shadow: 5px 5px 2px #777777;   
 }
+*/
+.panel_glowny
+{
+    width: 25%;
+    height: 400px;
+    /*background-color: white;*/
+    background: linear-gradient(#ffffff 50%, #A9A9A9);
+    padding-top: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0%;
+    /*padding: 3%;*/
+    margin: 9px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #777777;   
+}
+.panel_glowny_mobile
+{
+    /*visibility: hidden; */
+    display: none;
+}
 .panel_glowny_o_firmie
 {
     width: 91.4%;
     /*height: 400px;*/
-    background-color: #4062EB;
+    /*background-color: #4062EB;*/
+    background: linear-gradient(#ffffff 50%, #A9A9A9);
     padding-top: 0%;
     padding-left: 3%;
     padding-right: 3%;
     /*padding: 3%;*/
     /*margin-top: 100px;*/
     margin: 80px 9px 9px 9px;
-    border: 2px solid red;
+    border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 2px #777777; 
     
 }
+.panel_mapa
+{
+    background-color: white;
+    
+    width: 850px;
+    height: 320px;
+    
+    border-radius: 10px;
+    padding: 1%; 
+    box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
+     
+}
+.panel_kontakt
+{
+    background-color: white;
+    
+    width: 60%;
+    /*
+    height: 135px;
+    */
+    border-radius: 10px;
+    padding: 1%;
+    box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
+    
+}
+iframe.mapa
+{
+    /*width= "366" height= "350"*/
+    width: 100%;
+    height: 95%;
+}
+
 #text_lewy_o_firmie
 {
     width: 90%;
@@ -221,10 +276,10 @@ table {
 }
 .panel_prawy_certyfikaty
 {
-    width: 31%;
+    width: 30%;
     height: 100px;
     float: right;
-    margin-right: 9px;
+    margin-right: 14px;
     padding-top: 2%;
 }
 .panel_lewy_certyfikaty
@@ -234,13 +289,7 @@ table {
     float: left;
     margin-left: 9px;
 }
-.fundusze
-{
-    /*
-    width: 400px;
-    height: 80px;
-    */
-}
+
 .panel_strona
 {
     width: 950px;
@@ -273,6 +322,7 @@ img.small_fundusze
 {
     width: 100%;
     height: 20%;
+    box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
 }
 img.zdjecie_dynamica
 {
@@ -282,8 +332,8 @@ img.zdjecie_dynamica
 }
 img.zdjecie_certyfikaty
 {
-    width: 167px;
-    height: 135px;
+    width: 301px;
+    height: 95px;
     float: left;
 }
 img.pdf_dotacje
@@ -295,20 +345,31 @@ div.panel_certyfikaty
 {
     background-color: white;
     width: 98%;
-    height: 135px;
+    /*height: 135px;*/
     border-radius: 10px;
     padding: 1%;
+    box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
 }
+div.panel_certyfikaty_02
+    {
+        background-color: white;
+        width: 98%;
+        height: 135px;
+        border-radius: 10px;
+        padding: 1%;
+        box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
+    }
 div.panel_dotacje
 {
-    /*background-color: white;*/
+    background-color: white;
     width: 98%;
     
     border-radius: 10px;
     padding-left:  2%;
     padding-top: 1px;
     /*background: linear-gradient(45deg, red, blue);*/
-    background: linear-gradient(45deg, white, #00BFFF);
+    /*background: linear-gradient(45deg, white, #00BFFF);*/
+    box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
 }
 
 div.panel_dotacje:hover
@@ -317,7 +378,8 @@ div.panel_dotacje:hover
 }
 .text_certyfikaty
 {
-    text-align: justify;
+    /*text-align: justify;*/
+    color: #696969;
     font-family: Verdana;
     font-size: 0.75em;
     padding-right: 2%;
@@ -375,8 +437,8 @@ div.panel_dotacje:hover
 }
 .text_panele
 {
-    color: white;
-    text-align: justify;
+    /*color: white;*/
+    /*text-align: justify;*/
     font-family: Verdana;
     font-size: 0.85em;
 }
@@ -386,6 +448,7 @@ div.panel_pdf
     padding: 3%;
     font-family: Verdana;
     font-size: 0.75em;
+    box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
 }
 div.panel_pdf:hover
 {
@@ -412,11 +475,11 @@ div.panel_pdf:hover
 
 h1
 {
-    color: white;
+    color: black;
 }
 ul
 {
-    color: white;
+    color: black;
     
     
 }
@@ -438,10 +501,15 @@ ul.lista_certyfikaty
     /*padding: 3%;*/
     margin-top: 9px;
     /*margin: 9px;*/
-    border: 2px solid red;
+    border: 1px solid #191970;
     border-radius: 10px;
     box-shadow: 5px 5px 2px #777777;
     
+}
+.certyfikaty_mobile
+{
+    /*visibility: hidden;*/
+    display: none;
 }
 
 
@@ -488,6 +556,10 @@ ul.lista_certyfikaty
     background: linear-gradient(#ffffff 20%, #A9A9A9);
     /*background: linear-gradient(to right, red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);*/
     /*border: 1px solid black;*/
+}
+#panel_in_footer_mobile
+{
+    display: none;
 }
 #stopka_adres
 {
@@ -547,10 +619,11 @@ nav
 {
     /*list-style-type: none;*/
     width: 700px;
-    height: 100px;
-   
-    
-    
+    height: 100px;   
+}
+.menu_mobile
+{
+    visibility: hidden;
 }
 .kolor_text_menu
 {
@@ -600,6 +673,11 @@ a
     font-family: serif;
     font-size: 18px;
 }
+.menu_lista_mobile
+{
+    display: none;
+}
+
 
 
 

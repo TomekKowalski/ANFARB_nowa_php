@@ -1,21 +1,20 @@
 
+var button_menu = document.getElementById("button_menu");
 
-
-    //alert("test1");
-    var wiecej_lewy = document.getElementById("wiecej_lewy");
-    //wiecej_lewy.addEventListener("onclick", strona_o_firmie);
-    wiecej_lewy.onclick = strona_o_firmie;
-    
-
-
-function strona_o_firmie()
+button_menu.onclick = function()
 {
-    var panel_tlo = document.getElementById("panel_tlo");
-    //var text_srodek_panel = document.getElementById("text_srodek_panel");
-    //panel_tlo.innerHTML = "test";
-    panel_tlo.setAttribute("class", "panel_srodek_ukryj");
-    //alert("test");
+    var panel_menu_mobile = document.getElementById("panel_menu_mobile");
+    var status_display = panel_menu_mobile.style.display;
     
-    /*panel_tlo.style.display = "none";*/
-}
+    if(status_display === "" || status_display === "none")
+    {
+        panel_menu_mobile.style.display = "block";
+    }
+    if(status_display === "block")
+    {
+        panel_menu_mobile.style.display = "none";
+    }
+    
+    
+};
 
